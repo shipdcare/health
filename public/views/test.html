@@ -1,0 +1,18 @@
+<html ng-app="healthApp">
+<head>
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div ng-controller="healthCtrl">{{ working }}</div>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/node_modules/angular/angular.min.js"></script>
+    <script>
+        angular.module('healthApp', [])
+            .controller('healthCtrl', function ($scope) {
+                $scope.working = true;
+            });
+    </script>
+</body>
+</html>

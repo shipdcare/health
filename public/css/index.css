@@ -1,0 +1,76 @@
+body{
+    background: #eff0f0;
+}
+
+.navbar{
+    padding: 0px 30px;
+    background: #fff;
+}
+
+.btn{
+    background: #fb5f66;
+    color: #fff;
+    border: 2px solid #fb5f66;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.btn-hover {
+    background: #fb5f66;
+    background-color: #f8434b;
+}
+
+.nav-item a{
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.active a{
+    color: #777 !important;
+    border-bottom: 3px solid #fb5f66;
+}
+
+.card {
+    padding: 30px 20px;
+}
+
+form {
+    padding: 20px 10px 10px 10px;
+}
+
+md-toolbar{
+    color: #fb5f66 !important;
+    background-color: #fff !important;
+    border-bottom: 1px solid #eee;
+}
+
+.no-appointments-card{
+    padding: 40px;
+    text-align: center;
+}
+
+.no-appointment-label{
+    margin-top: 20px;
+}
+
+.no-appointments-image {
+    height: 50px;
+    width: 50px;
+    float: none;
+    margin: auto;
+}
+
+#upcoming-appointments {
+    color: #fb5f66 !important;
+}
+
+#upcoming-appointments-table tbody tr{ 
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}

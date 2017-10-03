@@ -1,0 +1,25 @@
+<md-card class="no-appointments-card" style="margin-top: 20px;" ng-if="appointments.length === 0">
+                <img src="/images/christmas-day.png" class="no-appointments-image">
+                <p class="no-appointment-label">No appointments yet!</p>
+            </md-card>
+            <div ng-if="appointments.length > 0" layout-padding>
+                <h2 class="md-toolbar-tools" id="upcoming-appointments">Upcoming appointments</h2>
+                <table class="table" id="upcoming-appointments-table">
+                    <thead>
+                        <tr class="md-body-1">
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Date and time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="appointment in appointments">
+                            <th class="md-body-1">{{ appointment.id }}</th>
+                            <th class="md-body-1">{{ appointment.name }}</th>
+                            <th class="md-body-1">{{ appointment.phone }}</th>
+                            <th class="md-body-1">{{ appointment.time }}</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
